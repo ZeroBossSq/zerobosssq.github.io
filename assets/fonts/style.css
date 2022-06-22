@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Proxima Soft';
+    src: local('Proxima Soft Regular'), local('Proxima-Soft-Regular'),
+        url('ProximaSoft-Regular.woff2') format('woff2'),
+        url('ProximaSoft-Regular.woff') format('woff'),
+        url('ProximaSoft-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

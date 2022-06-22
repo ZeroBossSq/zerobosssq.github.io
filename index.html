@@ -21,25 +21,46 @@
             .rounded-img {
                 width: 40%;
                 border-radius: 50%;
-                box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+                box-shadow: 0 0 10px rgba(197, 178, 182, 0.4);
                 padding: 0.4em;
             }
             .rounded-logo {
                 width: 40;
                 border-radius: 50%;
             }
-            .bg-purple {
+            .col-purple {
                 background-color: blueviolet;
             }
-            .bg-blue {
+            .col-blue {
                 background-color: rgb(48, 103, 223);
             }
-            .bg-orange {
-                background-color: rgb(221, 130, 26);
+            .col-orange {
+                background-color: #ff4c1e;
             }
-            .bg-pink {
+            .col-pink {
                 background-color: rgb(110, 8, 8);
             }
+            .col-gold {
+                background-color: #dea338;
+            }
+            .col-green {
+                background-color: #379329;
+            }
+            .col-text {
+                color: #c9d1d9
+            }
+            .bar-dark {
+                background-color: #161b22;
+            }
+            .backg-dark {
+                background-color: #12171f;
+            }
+            .custom-font {
+                font-family: proxima soft;
+            }
+            .round-progress-bar {
+				border-radius: 50%;
+			}
             ul.hr {
                 margin: 0;
                 padding: 4px;
@@ -53,8 +74,8 @@
             }
         </style>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <body class="backg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bar-dark">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img
@@ -89,7 +110,7 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/projects/">Projects</a>
+                            <a class="nav-link" href="/projects">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -101,17 +122,16 @@
                     <img
                         class="rounded-img"
                         src="assets/logo/ico.png"
-                        alt="ZeroBossSq"
+                        alt="ZeroBoss"
                     />
-                    <h1 class="fw-light">ZeroBossSq</h1>
-                    <p class="lead text-muted">
+                    <h1 class="fw-light col-text custom-font">ZeroBossSq</h1>
+                    <p class="lead col-text text-muted"><span class="col-text custom-font">
                         I'm a self-taught dev from Ukraine. I'm learning and
                         continue to develop mini-games and various useful
                         utilities on python
-                    </p>
+                    </span></p>
                     <a
                         href="https://github.com/ZeroBossSq"
-                        target="_blank"
                         class="btn btn-primary"
                         >My GitHub</a
                     >
@@ -144,10 +164,10 @@
         <div class="container text-center my-5">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Skills</h1>
+                    <h1 class="fw-light col-text">Skills</h1>
                     <div class="progress">
                         <div
-                            class="progress-bar bg-blue"
+                            class="progress-bar col-green"
                             role="progressbar"
                             style="width: 60%"
                             aria-valuenow="60"
@@ -160,7 +180,20 @@
                     <h1></h1>
                     <div class="progress">
                         <div
-                            class="progress-bar bg-purple"
+                            class="progress-baк col-orange"
+                            role="progressbar"
+                            style="width: 10%"
+                            aria-valuenow="7"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span class="col-text">HTML5 - 7%</span>
+                        </div>
+                    </div>
+                    <h1></h1>
+                    <div class="progress">
+                        <div
+                            class="progress-bar col-purple"
                             role="progressbar"
                             style="width: 7%"
                             aria-valuenow="7"
@@ -170,32 +203,52 @@
                             C# - 5%
                         </div>
                     </div>
+                    <h1></h1>
+                    <div class="progress">
+                        <div
+                            class="progress-bar col-blue"
+                            role="progressbar"
+                            style="width: 9%"
+                            aria-valuenow="7"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            CSS3 - 4%
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container text-center my-5">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Technologies</h1>
+                    <h1 class="fw-light col-text">Technologies</h1>
                     <ul class="hr">
                         <li>
                             <img
-                                src="assets/tech/git.png"
-                                alt="git"
+                                src="http://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png"
+                                alt="Git"
                                 width="10%"
                             />
                         </li>
                         <li>
                             <img
-                                src="assets/tech/PS.png"
-                                alt="ps"
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                                alt="GitHub"
                                 width="10%"
                             />
                         </li>
                         <li>
                             <img
-                                src="assets/tech/PyCharm.png"
-                                alt="Pycharm"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"
+                                alt="PhotoShop"
+                                width="10%"
+                            />
+                        </li>
+                        <li>
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png"
+                                alt="PyCharm"
                                 width="10%"
                             />
                         </li>
