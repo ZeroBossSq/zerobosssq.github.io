@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ZeroBossSq</title>
-        <link rel="icon" type="image/x-icon" href="/assets/logo/logo.png" />
+        <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.png" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -17,41 +17,26 @@
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"
         ></script>
-        <style>
-            .rounded-logo {
-                width: 40;
-                border-radius: 50%;
-            }
-            .rounded-img {
-                width: 40%;
-                border-radius: 50%;
-                box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
-                padding: 0.4em;
-            }
-            .bg-purple {
-                background-color: blueviolet;
-            }
-            .bg-blue {
-                background-color: rgb(48, 103, 223);
-            }
-            .card {
-                border-radius: 1em;
-            }
-            .card:hover {
-                background-color: rgba(0, 0, 0, 0.1);
-            }
-            .card img {
-                border-radius: 0.9em;
-            }
-        </style>
+        <link
+                href="../assets/default.css"
+                rel="stylesheet"
+        />
+        <link
+            href="../assets/colours.css"
+            rel="stylesheet"
+        />
+        <link
+            href="../assets/fonts.css"
+            rel="stylesheet"
+        />
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <body class="backg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bar-dark">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <img
                         class="rounded-logo"
-                        src="/assets/logo/ico.png"
+                        src="/assets/logo/avatar.png"
                         alt="Logo"
                         width="40"
                     />
@@ -73,13 +58,16 @@
                 >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/"
+                            <a class="nav-link custom-font" aria-current="page" href="/"
                                 >Home</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/projects"
-                                >Projects</a
+                            <a
+                                class="nav-link active custom-font"
+                                href="/projects"
+                            >
+                                Projects</a
                             >
                         </li>
                     </ul>
@@ -89,16 +77,16 @@
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                 <div class="col">
-                    <div class="card">
+                    <div class="card card-dark">
                         <img
-                            src="/assets/logo/ico.png"
+                            src="/assets/projects/zeai.png"
                             class="card-img-top"
                             alt="snake"
                         />
                         <h1></h1>
-                        <div class="progress">
+                        <div class="progress rounded-pbar">
                             <div
-                                class="progress-bar bg-blue"
+                                class="progress-bar rounded-pbar bg-blue custom-font"
                                 role="progressbar"
                                 style="width: 100%"
                                 aria-valuenow="100"
@@ -109,12 +97,50 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Name | Prog language</h5>
-                            <p class="card-text">Text</p>
-                            <a href="" class="btn btn-primary" target="_blank"
-                                >Go to repository</a
+                            <h5 class="card-title custom-font col-gray-white">ZEAI Viewer</h5>
+                            <p class="card-text custom-font col-gray-white">Opens 386 byte .zeai pixel art</p>
+                            <a
+                                href="https://github.com/ZeroBossSq/ZEAI-Viewer"
+                                class="btn btn-primary custom-font "
+                                target="_blank"
                             >
-                            <a href="" class="btn btn-secondary">Download</a>
+                               Go to repository</a
+                            >
+                            <a href="https://github.com/ZeroBossSq/ZEAI-Viewer/releases/tag/Release" class="btn btn-secondary custom-font ">Download</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="col">
+                    <div class="card card-dark">
+                        <img
+                            src="/assets/projects/JRPE.png"
+                            class="card-img-top"
+                            alt="snake"
+                        />
+                        <h1></h1>
+                        <div class="progress rounded-pbar">
+                            <div
+                                class="progress-bar rounded-pbar bg-blue custom-font"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="100"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                Made - 15%
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title custom-font col-gray-white">JRecoursePack Editor</h5>
+                            <p class="card-text custom-font col-gray-white">A smart utility for managing your resource pack</p>
+                            <a
+                                href="https://github.com/ZeroBossSq/py-resource-pack-viewer"
+                                class="btn btn-primary custom-font "
+                                target="_blank"
+                            >
+                               Go to repository</a
+                            >
+                            <!--a href="" class="btn btn-secondary custom-font ">Download</a-->
                         </div>
                     </div>
                 </div>

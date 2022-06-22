@@ -1,0 +1,66 @@
+[data-tooltip] {
+    position: relative;
+}
+[data-tooltip]::after {
+    margin-left: -27%;
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 100px;
+    left: 0; top: 0;
+    background: #8685b4da;
+    color: #fff;
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: "none";
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 1em;
+}
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+}
+.rounded-pbar {
+    border-radius: 0.7em;
+}
+.rounded-img {
+    width: 40%;
+    border-radius: 50%;
+    background-color: #bababa;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    padding: 0.3em;
+}
+.rounded-logo {
+    width: 40;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(197, 178, 182, 0.5);
+}
+.custom-font {
+    font-family: Proxima Soft;
+}
+.pbar-text {
+    margin-top: 1px;
+}
+ul.hr {
+    margin: 0;
+    padding: 4px;
+}
+ul.hr li {
+    display: inline;
+    margin-right: 10px;
+}
+.copy:target {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+.techs-container {
+    margin-top: 15px;
+    position: static;
+    display: flex;
+}
+.tech {
+    display: inline-block;
+    margin: 0 auto;
+}

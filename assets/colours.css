@@ -1,0 +1,33 @@
+.col-purple {
+    background-color: #822c98;
+}
+.col-blue {
+    background-color: #2f49d4;
+}
+.col-orange {
+    background-color: #ff4c1e;
+}
+.col-red {
+    background-color: #6e0808;
+}
+.col-gold {
+    background-color: #dea338;
+}
+.col-green {
+    background-color: #54b413;
+}
+.col-white {
+    color: #ffffff
+}
+.col-gray-white {
+    color: #c9d1d9
+}
+.bar-dark {
+    background-color: #161b22;
+}
+.backg-dark {
+    background-color: #12171f;
+}
+.card-dark {
+    background-color: #1b222c;
+}
