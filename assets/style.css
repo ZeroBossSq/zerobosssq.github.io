@@ -11,7 +11,7 @@
     background: #7c6eb5;
     color: #fff;
     padding: 0.5em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px #0000004d;
     pointer-events: "none";
     opacity: 0;
     transition: 0.5s;
@@ -27,14 +27,14 @@
 .rounded-img {
     width: 40%;
     border-radius: 50%;
-    background-color: #bababa;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    background-color: var(--col-logo-bg);
+    box-shadow: 0 0 10px var(--col-logo-light);
     padding: 0.3em;
 }
 .rounded-logo {
     width: 40;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(197, 178, 182, 0.5);
+    box-shadow: 0 0 10px var(--col-logo-light);
 }
 .proxima-font {
     font-family: Proxima Soft;
@@ -56,7 +56,7 @@ ul.hr li {
 a {
     text-decoration: none;
 }
-.techs-container {
+.tech-container {
     margin-top: 15px;
     position: static;
     display: flex;

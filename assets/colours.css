@@ -1,3 +1,11 @@
+:root {
+    --col-logo-light: #000000;
+    --col-logo-bg: #454545;
+}
+:root.night-theme {
+    --col-logo-light: #ffffff66;
+    --col-logo-bg: #bababa;
+}
 .col-purple {
     background-color: #822c98;
 }
@@ -31,15 +39,15 @@
 .col-card {
     background-color: #e4ddd3;
 }
-.col-text .night-theme {
+.night-theme .col-text {
     color: #c9d1d9;
 }
-.col-bar .night-theme {
+.night-theme .col-bar {
     background-color: #161b22;
 }
-.col-bg .night-theme {
+.night-theme .col-bg {
     background-color: #12171f;
 }
-.col-card .night-theme {
+.night-theme .col-card {
     background-color: #1b222c;
 }
