@@ -17,17 +17,29 @@
     background-color: #54b413;
 }
 .col-white {
-    color: #ffffff
+    color: #ffffff;
 }
-.col-gray-white {
-    color: #c9d1d9
+.col-text {
+    color: #362e26;
 }
-.bar-dark {
+.col-bar {
+    background-color: #e9e4dd;
+}
+.col-bg {
+    background-color: #ede8e0;
+}
+.col-card {
+    background-color: #e4ddd3;
+}
+.col-text .night-theme {
+    color: #c9d1d9;
+}
+.col-bar .night-theme {
     background-color: #161b22;
 }
-.backg-dark {
+.col-bg .night-theme {
     background-color: #12171f;
 }
-.card-dark {
+.col-card .night-theme {
     background-color: #1b222c;
 }

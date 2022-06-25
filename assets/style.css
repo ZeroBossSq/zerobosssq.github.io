@@ -8,7 +8,7 @@
     width: 100px;
     left: 0;
     top: 0;
-    background: #8685b4da;
+    background: #7c6eb5;
     color: #fff;
     padding: 0.5em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -36,7 +36,7 @@
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(197, 178, 182, 0.5);
 }
-.custom-font {
+.proxima-font {
     font-family: Proxima Soft;
 }
 .pbar-text {
