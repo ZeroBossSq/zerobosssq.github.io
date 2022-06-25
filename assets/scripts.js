@@ -10,15 +10,14 @@ function CopyMe(TextToCopy) {
     var par = document.querySelector(".par");
     par.innerHTML = "Copied";
 }
-document.querySelector(".themetoggle").addEventListener("click", (event) => {
-    event.preventDefault();
+function themeToggle() {
     if (localStorage.getItem("theme") === "night-theme") {
         localStorage.removeItem("theme");
     } else {
         localStorage.setItem("theme", "night-theme");
     }
     addDarkClassToHTML();
-});
+}
 
 function addDarkClassToHTML() {
     try {
