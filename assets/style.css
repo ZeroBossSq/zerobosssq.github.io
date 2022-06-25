@@ -6,7 +6,8 @@
     content: attr(data-tooltip);
     position: absolute;
     width: 100px;
-    left: 0; top: 0;
+    left: 0;
+    top: 0;
     background: #8685b4da;
     color: #fff;
     padding: 0.5em;
