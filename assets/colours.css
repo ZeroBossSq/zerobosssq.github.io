@@ -1,10 +1,12 @@
 :root {
     --col-logo-light: #000000;
-    --col-logo-bg: #454545;
+    --avatar-shadow: #000000;
+    --avatar-bg: #6c6c6c;
 }
 :root.night-theme {
     --col-logo-light: #ffffff66;
-    --col-logo-bg: #bababa;
+    --avatar-shadow: #ffffff;
+    --avatar-bg: #939393;
 }
 .col-purple {
     background-color: #822c98;
@@ -21,23 +23,59 @@
 .col-gold {
     background-color: #dea338;
 }
+.col-yellow {
+    background-color: #ffca28;
+}
 .col-green {
     background-color: #54b413;
 }
 .col-white {
     color: #ffffff;
 }
+.col-gray {
+    color: #343a40;
+}
+.grad-bg-purple {
+    background: linear-gradient(135deg, #c125dd 0%, #5c27fe 100%);
+}
+.grad-bg-orange {
+    background: linear-gradient(135deg, #ffcb52 0%, #ff7b02 100%);
+}
+.grad-bg-green {
+    background: linear-gradient(135deg, #2afeb7 0%, #08c792 100%);
+}
+.grad-bg-blue {
+    background: linear-gradient(135deg, #5581f1 0%, #1153fc 100%);
+}
+.grad-bg-pink {
+    background: linear-gradient(135deg, #facd68 0%, #fc76b3 100%);
+}
+.grad-bg-aqua {
+    background: linear-gradient(135deg, #00f7a7 0%, #04f5ed 100%);
+}
+.grad-bg-light-blue {
+    background: linear-gradient(135deg, #1de5e2 0%, #b588f7 100%);
+}
+.grad-bg-yellow {
+    background: linear-gradient(135deg, #ffe324 0%, #ffb533 100%);
+}
+.grad-bg-white {
+    background: linear-gradient(135deg, #ffffff 0%, #efefef 100%);
+}
 .col-text {
-    color: #362e26;
+    color: #373737;
 }
 .col-bar {
-    background-color: #eeeeee;
+    background-color: #dcdcdc;
 }
 .col-bg {
-    background-color: #e8e8e8;
+    background-color: #e1e1e1;
 }
 .col-card {
-    background-color: #e5e5e5;
+    background-color: #d6d6d6;
+}
+.col-nav-bar {
+    background-color: #9999997e;
 }
 .night-theme .col-text {
     color: #c9d1d9;

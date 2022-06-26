@@ -25,22 +25,18 @@
     border-radius: 0.7em;
 }
 .rounded-img {
-    width: 40%;
+    width: 256px;
     border-radius: 50%;
-    background-color: var(--col-logo-bg);
     box-shadow: 0 0 10px var(--col-logo-light);
     padding: 0.3em;
 }
 .rounded-logo {
-    width: 40;
+    width: 40px;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--col-logo-light);
 }
 .proxima-font {
     font-family: Proxima Soft;
-}
-.pbar-text {
-    margin-top: 1px;
 }
 ul.hr {
     margin: 0;
@@ -61,7 +57,59 @@ a {
     position: static;
     display: flex;
 }
-.tech {
+.container-item {
     display: inline-block;
     margin: 0 auto;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+}
+.avatar-shadow {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--avatar-bg);
+    box-shadow: 0px 0px 16px var(--avatar-shadow);
+}
+.button-1 {
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+        transform 0.1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+}
+.button-1:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow 0.2s;
+}
+.button-1.rounded-img {
+    background-color: #f7f7f7;
+    border-color: #000000;
+    transform: scale(0.96);
+}
+.button-1:disabled {
+    border-color: #dddddd;
+    color: #dddddd;
+    cursor: not-allowed;
+    opacity: 1;
 }

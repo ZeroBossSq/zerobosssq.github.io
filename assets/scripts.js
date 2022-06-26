@@ -1,32 +1,53 @@
-function CopyMe(TextToCopy) {
-    var TempText = document.createElement("input");
-    TempText.value = TextToCopy;
-    document.body.appendChild(TempText);
-    TempText.select();
+// function delay(milliseconds) {
+//     return new Promise((resolve) => {
+//         setTimeout(resolve, milliseconds);
+//     });
+// }
 
-    document.execCommand("copy");
-    document.body.removeChild(TempText);
-
-    var par = document.querySelector(".par");
-    par.innerHTML = "Copied";
-}
 function themeToggle() {
     if (localStorage.getItem("theme") === "night-theme") {
         localStorage.removeItem("theme");
     } else {
         localStorage.setItem("theme", "night-theme");
     }
-    addDarkClassToHTML();
+    addNightTheme();
 }
-
-function addDarkClassToHTML() {
+function addNightTheme() {
     try {
         if (localStorage.getItem("theme") === "night-theme") {
             document.querySelector("html").classList.add("night-theme");
         } else {
             document.querySelector("html").classList.remove("night-theme");
         }
-    } catch (err) {}
+        hamburgerThemeCheck();
+    } catch {}
+}
+function hamburgerThemeCheck() {
+    if (localStorage.getItem("theme") === "night-theme") {
+        document
+            .querySelector(".navbar-expand-lg")
+            .classList.add("navbar-dark");
+    } else {
+        document
+            .querySelector(".navbar-expand-lg")
+            .classList.remove("navbar-dark");
+    }
 }
 
-addDarkClassToHTML();
+function moveAvatar() {
+    avatar = new Tween(
+        document.querySelector(".avatar").style,
+        "margin-top",
+        Tween.regularEaseOut,
+        0,
+        20,
+        1.2,
+        "px"
+    );
+    avatar.onMotionFinished = function () {
+        this.yoyo();
+    };
+    avatar.start();
+}
+
+addNightTheme();
