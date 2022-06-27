@@ -34,20 +34,4 @@ function hamburgerThemeCheck() {
     }
 }
 
-function moveAvatar() {
-    avatar = new Tween(
-        document.querySelector(".avatar").style,
-        "margin-top",
-        Tween.regularEaseOut,
-        0,
-        20,
-        1.2,
-        "px"
-    );
-    avatar.onMotionFinished = function () {
-        this.yoyo();
-    };
-    avatar.start();
-}
-
 addNightTheme();
