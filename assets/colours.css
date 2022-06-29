@@ -62,6 +62,9 @@
 .grad-bg-white {
     background: linear-gradient(135deg, #ffffff 0%, #efefef 100%);
 }
+.grad-bg-python {
+    background: linear-gradient(135deg, #e9cc0a 25%, #599c4c 50%, #205e97 75%);
+}
 .col-text {
     color: #373737;
 }

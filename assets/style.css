@@ -53,7 +53,6 @@ a {
     text-decoration: none;
 }
 .tech-container {
-    margin-top: 15px;
     position: static;
     display: flex;
 }
